@@ -1,0 +1,109 @@
+/* Global styles */
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 36px;
+}
+
+h3 {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 24px;
+}
+
+p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+}
+
+a {
+  color: #4F357A;
+}
+
+a:hover {
+  color: #4F357A;
+}
+
+/* Buttons */
+
+.btn-primary {
+  background-color: #4F357A;
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #4F357A;
+  border-color: #4F357A;
+}
+
+/* Other */
+
+#landing-page {
+  height: 100vh;
+  background-color: #4F357A;
+  color: white;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.enghack {
+  padding-top: 30vh;
+  font-family: 'Righteous';
+  font-size: 6.15em;
+  display: inline-flex;
+}
+
+#about {
+  margin-top: 25%;
+  margin-bottom: 25%;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+  .enghack {
+    font-size: 3.85em;
+  }
+}
+
+/* Animations */
+
+.typewriter {
+  font-family: 'Righteous';
+  padding-top: 0.15em;
+  font-size: 1em;
+  overflow: hidden;
+  border-right: 0.15em solid white;
+  white-space: nowrap;
+  animation: 
+    typing 2s,
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
