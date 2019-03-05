@@ -3,6 +3,8 @@
 body {
   padding: 0px;
   margin: 0px;
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -67,7 +69,7 @@ a:hover {
 .enghack {
   padding-top: 30vh;
   font-family: 'Righteous';
-  font-size: 6.15em;
+  font-size: 82px;
   display: inline-flex;
 }
 
@@ -76,11 +78,30 @@ a:hover {
   margin-bottom: 25%;
 }
 
+.landing-logo {
+  display: none;
+}
+
 /* Mobile */
 
 @media only screen and (max-width: 768px) {
+  .container {
+    text-align: center;
+  }
+  
+  #newsletter-form {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
   .enghack {
-    font-size: 3.85em;
+    display: none;
+  }
+
+  .landing-logo {
+    display: inline-block;
+    margin-top: 25%;
   }
 }
 
