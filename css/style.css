@@ -27,6 +27,11 @@ p {
   font-size: 15px;
 }
 
+img {
+  max-width:100%;
+  max-height:100%;
+}
+
 a {
   color: #4F357A;
 }
@@ -45,6 +50,7 @@ a:hover {
 .btn-primary {
   background-color: #4F357A;
   border: none;
+  padding: 20px 50px;
   color: white;
 }
 
@@ -78,10 +84,6 @@ a:hover {
   display: inline-flex;
 }
 
-#about {
-  height: 100vh;
-}
-
 .landing-logo {
   display: none;
 }
@@ -100,14 +102,48 @@ a:hover {
 }
 
 .wire-divider-right {
-  margin-top: 5%;
+  margin: 5% 0;
   float: right;
 }
 
 .wire-divider-left {
-  margin-top: 5%;
+  margin: 5% 0 ;
 }
 
+#sponsors > .container {
+  text-align: left;
+}
+
+.gold-tier {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.gold-tier > p {
+  text-align: center;
+}
+
+.silver-tier {
+  margin: 0 auto;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.bronze-tier {
+  text-align: center;
+  margin-bottom: 7.5%;
+}
+
+.past-sponsors {
+  text-align: center;
+  overflow-x: scroll;
+  overflow-y: auto;
+}
+
+.sponsorship-package {
+  width: 50%;
+  margin: 5% auto 0 auto;
+}
 /* Mobile */
 
 @media only screen and (max-width: 768px) {
@@ -119,8 +155,13 @@ a:hover {
     margin: 0;
   }
 
-  .wire-divider-right {
+  .hide-mobile {
     display: none;
+  }
+
+  .wire-divider-right {
+    margin-top: 10%;
+    width: 75%;
   }
 
   .wire-divider-left {
@@ -139,6 +180,10 @@ a:hover {
   #about-image-mobile {
     display: inline-block;
     width: 75%;
+  }
+
+  .sponsorship-package {
+    width: 100%;
   }
 }
 
