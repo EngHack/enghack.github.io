@@ -115,7 +115,7 @@ a:hover {
   margin: 5% 0 ;
 }
 
-#sponsors > .container {
+#sponsors > .container, #faq > .container {
   text-align: left;
 }
 
