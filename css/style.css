@@ -64,6 +64,10 @@ a:hover {
   box-shadow: none;
 }
 
+.submit {
+  padding: 7.5px 15px;
+}
+
 /* Other */
 
 #landing-page {
@@ -174,7 +178,7 @@ a:hover {
   text-align: left;
 }
 
-.card {
+.faq-card {
   border: none;
   border-left: 5px #4F357A solid;
   border-radius: 3px !important;
@@ -192,6 +196,24 @@ a:hover {
 .chevron {
   width: 5%;
   float: right;
+}
+
+#footer {
+  background-color: #4F357A;
+}
+
+.footer-card {
+  text-align: left;
+  margin-top: 15%;
+  margin-bottom: 2.5em;
+  padding-top: 7.5%;
+  padding-left: 5%;
+  height: 75%;
+}
+
+.engsoc-logo {
+  width: 10%;
+  height: 10%;
 }
 /* Mobile */
 
@@ -234,6 +256,15 @@ a:hover {
   .sponsorship-package {
     width: 100%;
   }
+
+  .footer-card {
+    margin-bottom: 5%;
+  }
+
+  .engsoc-logo {
+    width: 15%;
+    height: 15%;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -252,6 +283,15 @@ a:hover {
   .landing-logo {
     display: inline-block;
     margin-top: 25%;
+  }
+
+  .newsletter-card {
+    display: none;
+  }
+
+  .engsoc-logo {
+    width: 25%;
+    height: 25%;
   }
 }
 
