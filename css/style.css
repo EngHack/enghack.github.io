@@ -266,10 +266,6 @@ a:hover {
   display: none;
 }
 
-.wires-mobile {
-  display: none;
-}
-
 .path {
   stroke-dasharray: 2000;
   stroke-dashoffset: 2000;
@@ -376,10 +372,6 @@ a:hover {
 
   .wires-tablet {
     display: none;
-  }
-
-  .wires-mobile {
-    display: inline-block;
   }
 }
 
