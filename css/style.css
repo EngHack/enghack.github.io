@@ -97,6 +97,13 @@ a:hover {
   display: none;
 }
 
+#mlh-logo {
+  position: absolute;
+  top: 0;
+  right: 2.5%;
+  z-index: 9999;
+}
+
 .about-page {
   padding-top: 15%;
 }
@@ -198,6 +205,40 @@ a:hover {
   float: right;
 }
 
+.navbar {
+  border: none !important;
+  margin-bottom: 0 !important;
+  padding-left: 5%;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
+}
+
+.navbar-brand {
+  margin-right: 0;
+  width: 125px;
+}
+
+.navbar-custom {
+  background-color: #372555 !important;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-nav > li{
+  text-align: left;
+  font-size: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 #footer {
   background-color: #4F357A;
 }
@@ -257,6 +298,17 @@ a:hover {
     width: 100%;
   }
 
+  .navbar {
+    padding-left: 2%;
+  }
+
+  .navbar-nav > li{
+    text-align: left;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
   .footer-card {
     margin-bottom: 5%;
   }
@@ -282,9 +334,12 @@ a:hover {
 
   .landing-logo {
     display: inline-block;
-    margin-top: 25%;
+    margin-top: 50%;
   }
 
+  .hide-mobile-sm {
+    display: none;
+  }
   .newsletter-card {
     display: none;
   }
