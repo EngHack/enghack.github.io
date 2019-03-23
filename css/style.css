@@ -64,6 +64,10 @@ a:hover {
   box-shadow: none;
 }
 
+.submit {
+  padding: 7.5px 15px;
+}
+
 /* Other */
 
 #landing-page {
@@ -96,7 +100,7 @@ a:hover {
 #mlh-logo {
   position: absolute;
   top: 0;
-  right: 1%;
+  right: 2.5%;
   z-index: 9999;
 }
 
@@ -181,7 +185,7 @@ a:hover {
   text-align: left;
 }
 
-.card {
+.faq-card {
   border: none;
   border-left: 5px #4F357A solid;
   border-radius: 3px !important;
@@ -205,11 +209,14 @@ a:hover {
   border: none !important;
   margin-bottom: 0 !important;
   padding-left: 5%;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
 }
 
 .navbar-brand {
   margin-right: 0;
-  width: 150px;
+  width: 125px;
 }
 
 .navbar-custom {
@@ -232,6 +239,23 @@ a:hover {
   padding-right: 15px;
 }
 
+#footer {
+  background-color: #4F357A;
+}
+
+.footer-card {
+  text-align: left;
+  margin-top: 15%;
+  margin-bottom: 2.5em;
+  padding-top: 7.5%;
+  padding-left: 5%;
+  height: 75%;
+}
+
+.engsoc-logo {
+  width: 10%;
+  height: 10%;
+}
 /* Mobile */
 
 @media only screen and (max-width: 768px) {
@@ -284,6 +308,15 @@ a:hover {
     padding-left: 10px;
     padding-right: 10px;
   }
+  
+  .footer-card {
+    margin-bottom: 5%;
+  }
+
+  .engsoc-logo {
+    width: 15%;
+    height: 15%;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -301,11 +334,19 @@ a:hover {
 
   .landing-logo {
     display: inline-block;
-    margin-top: 25%;
+    margin-top: 50%;
   }
 
   .hide-mobile-sm {
     display: none;
+  }
+  .newsletter-card {
+    display: none;
+  }
+
+  .engsoc-logo {
+    width: 25%;
+    height: 25%;
   }
 }
 
