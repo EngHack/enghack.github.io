@@ -66,17 +66,18 @@
           <img class="landing-logo" src="assets/enghack_logo.png" alt="enghack logo"/>
           <h3 id="logistics" class="mt-3">June 21 - 23, 2019 @ University of Waterloo</h3>
           <p id="signup" class="mt-5">Find out when applications open! Sign up for our newsletter!</p>
-          <form>
+          <form id="newsletter-signup">
             <div id="newsletter-form" class="form-row align-items-center">
               <div class="col-8 col-md-5">
                 <label class="sr-only" for="inlineFormInput">Name</label>
-                <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Your email">
+                <input type="email" name="email" class="form-control mb-2" id="inlineFormInput" placeholder="Your email" required>
               </div>
               <div class="col-auto">
                 <button type="submit" class="btn btn-primary submit mb-2">Submit</button>
               </div>
             </div>
           </form>
+          <p id="newsletter-confirmation" style="display: none">Your response has been saved!</p>
         </div>
       </div>
     </div>
@@ -250,17 +251,18 @@
             <div class="col-12 col-lg-6">
               <div class="card footer-card newsletter-card">
                 <h3>Find out when applications open!</h3>
-                <form>
+                <form id="newsletter-signup-footer">
                   <div id="newsletter-form" class="form-row justify-content-start">
                     <div class="col-9">
-                      <label class="sr-only" for="inlineFormInput">Name</label>
-                      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Your email">
+                      <label class="sr-only" for="inlineFormInput">Email</label>
+                      <input type="email" name="email" class="form-control mb-2" id="inlineFormInput" placeholder="Your email" required>
                     </div>
                     <div class="col-auto">
                       <button type="submit" class="btn btn-primary submit mb-2">Submit</button>
                     </div>
                   </div>
                 </form>
+                <p id="newsletter-confirmation-footer" style="display: none">Your response has been saved!</p>
               </div>
             </div>
             <div class="col-12 col-lg-6">
@@ -278,24 +280,13 @@
       </div>
     </div>
   </body>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>  
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script>
-    if(window.innerWidth <= 425) {
-      document.getElementById("logistics").innerText = "June 21 - 23, 2019 \n University of Waterloo";
-      document.getElementById("signup").innerText = "Sign up for our newsletter!";
-    }
-
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementsByClassName("navbar")[0].style.top = "0";
-      } else {
-        document.getElementsByClassName("navbar")[0].style.top = "-300px";
-      }
-      prevScrollpos = currentScrollPos;
-    }
+    var _0xf4c5=["\x69\x6E\x6E\x65\x72\x57\x69\x64\x74\x68","\x69\x6E\x6E\x65\x72\x54\x65\x78\x74","\x6C\x6F\x67\x69\x73\x74\x69\x63\x73","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x4A\x75\x6E\x65\x20\x32\x31\x20\x2D\x20\x32\x33\x2C\x20\x32\x30\x31\x39\x20\x0A\x20\x55\x6E\x69\x76\x65\x72\x73\x69\x74\x79\x20\x6F\x66\x20\x57\x61\x74\x65\x72\x6C\x6F\x6F","\x73\x69\x67\x6E\x75\x70","\x53\x69\x67\x6E\x20\x75\x70\x20\x66\x6F\x72\x20\x6F\x75\x72\x20\x6E\x65\x77\x73\x6C\x65\x74\x74\x65\x72\x21","\x70\x61\x67\x65\x59\x4F\x66\x66\x73\x65\x74","\x6F\x6E\x73\x63\x72\x6F\x6C\x6C","\x74\x6F\x70","\x73\x74\x79\x6C\x65","\x6E\x61\x76\x62\x61\x72","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x43\x6C\x61\x73\x73\x4E\x61\x6D\x65","\x30","\x2D\x33\x30\x30\x70\x78","\x66\x6F\x72\x6D\x23\x6E\x65\x77\x73\x6C\x65\x74\x74\x65\x72\x2D\x73\x69\x67\x6E\x75\x70","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x63\x72\x69\x70\x74\x2E\x67\x6F\x6F\x67\x6C\x65\x2E\x63\x6F\x6D\x2F\x6D\x61\x63\x72\x6F\x73\x2F\x73\x2F\x41\x4B\x66\x79\x63\x62\x79\x69\x42\x51\x77\x6A\x4D\x35\x54\x49\x4A\x79\x7A\x68\x68\x57\x4C\x6E\x6E\x64\x30\x50\x68\x43\x6A\x79\x30\x6D\x63\x49\x6F\x63\x66\x4F\x6D\x65\x50\x4A\x73\x6B\x59\x33\x63\x71\x75\x7A\x7A\x6E\x45\x2F\x65\x78\x65\x63","\x66\x6F\x72\x6D\x23\x6E\x65\x77\x73\x6C\x65\x74\x74\x65\x72\x2D\x73\x69\x67\x6E\x75\x70\x2D\x66\x6F\x6F\x74\x65\x72","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x76\x61\x6C\x75\x65","\x73\x65\x72\x69\x61\x6C\x69\x7A\x65\x41\x72\x72\x61\x79","\x50\x4F\x53\x54","\x6A\x73\x6F\x6E","\x61\x6A\x61\x78","\x6E\x65\x77\x73\x6C\x65\x74\x74\x65\x72\x2D\x63\x6F\x6E\x66\x69\x72\x6D\x61\x74\x69\x6F\x6E","\x64\x69\x73\x70\x6C\x61\x79\x3A\x20\x69\x6E\x6C\x69\x6E\x65\x2D\x62\x6C\x6F\x63\x6B","\x64\x6F\x6E\x65","\x53\x6F\x6D\x65\x74\x68\x69\x6E\x67\x20\x77\x65\x6E\x74\x20\x77\x72\x6F\x6E\x67\x21\x20\x50\x6C\x65\x61\x73\x65\x20\x74\x72\x79\x20\x61\x67\x61\x69\x6E\x20\x6C\x61\x74\x65\x72\x2E","\x66\x61\x69\x6C","\x73\x75\x62\x6D\x69\x74","\x23\x6E\x65\x77\x73\x6C\x65\x74\x74\x65\x72\x2D\x73\x69\x67\x6E\x75\x70","\x6E\x65\x77\x73\x6C\x65\x74\x74\x65\x72\x2D\x63\x6F\x6E\x66\x69\x72\x6D\x61\x74\x69\x6F\x6E\x2D\x66\x6F\x6F\x74\x65\x72","\x23\x6E\x65\x77\x73\x6C\x65\x74\x74\x65\x72\x2D\x73\x69\x67\x6E\x75\x70\x2D\x66\x6F\x6F\x74\x65\x72"];if(window[_0xf4c5[0]]<= 425){document[_0xf4c5[3]](_0xf4c5[2])[_0xf4c5[1]]= _0xf4c5[4];document[_0xf4c5[3]](_0xf4c5[5])[_0xf4c5[1]]= _0xf4c5[6]};var prevScrollpos=window[_0xf4c5[7]];window[_0xf4c5[8]]= function(){var _0x2050x2=window[_0xf4c5[7]];if(prevScrollpos> _0x2050x2){document[_0xf4c5[12]](_0xf4c5[11])[0][_0xf4c5[10]][_0xf4c5[9]]= _0xf4c5[13]}else {document[_0xf4c5[12]](_0xf4c5[11])[0][_0xf4c5[10]][_0xf4c5[9]]= _0xf4c5[14]};prevScrollpos= _0x2050x2};var $form=$(_0xf4c5[15]),url=_0xf4c5[16];var $footerForm=$(_0xf4c5[17]),url=_0xf4c5[16];$(_0xf4c5[30])[_0xf4c5[29]](function(_0x2050x6){_0x2050x6[_0xf4c5[18]]();var _0x2050x7={"\x65\x6D\x61\x69\x6C":$form[_0xf4c5[20]]()[0][_0xf4c5[19]]};var _0x2050x8=$[_0xf4c5[23]]({url:url,method:_0xf4c5[21],dataType:_0xf4c5[22],data:_0x2050x7});_0x2050x8[_0xf4c5[26]](function(_0x2050x9){document[_0xf4c5[3]](_0xf4c5[24])[_0xf4c5[10]]= _0xf4c5[25]});_0x2050x8[_0xf4c5[28]](function(_0x2050x9){document[_0xf4c5[3]](_0xf4c5[24])[_0xf4c5[1]]= _0xf4c5[27];document[_0xf4c5[3]](_0xf4c5[24])[_0xf4c5[10]]= _0xf4c5[25]})});$(_0xf4c5[32])[_0xf4c5[29]](function(_0x2050x6){_0x2050x6[_0xf4c5[18]]();var _0x2050x7={"\x65\x6D\x61\x69\x6C":$footerForm[_0xf4c5[20]]()[0][_0xf4c5[19]]};var _0x2050x8=$[_0xf4c5[23]]({url:url,method:_0xf4c5[21],dataType:_0xf4c5[22],data:_0x2050x7});_0x2050x8[_0xf4c5[26]](function(_0x2050x9){document[_0xf4c5[3]](_0xf4c5[31])[_0xf4c5[10]]= _0xf4c5[25]});_0x2050x8[_0xf4c5[28]](function(_0x2050x9){document[_0xf4c5[3]](_0xf4c5[31])[_0xf4c5[1]]= _0xf4c5[27];document[_0xf4c5[3]](_0xf4c5[31])[_0xf4c5[10]]= _0xf4c5[25]})})
   </script>
 </html>
