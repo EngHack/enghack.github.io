@@ -156,6 +156,17 @@ a:hover {
   overflow-y: auto;
 }
 
+.past-sponsors > div {
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.past-sponsors > div > img {
+  width: 75%;
+  height: 75%;
+}
+
 .sponsorship-package {
   width: 50%;
   margin: 5% auto 0 auto;
