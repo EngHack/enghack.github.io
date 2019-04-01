@@ -385,11 +385,11 @@ a:hover {
     display: none;
   }
 
-  .past-sponsors > div {
+  .past-sponsors > a {
     margin-bottom: 10%;
   }
 
-  .past-sponsors > div > img {
+  .past-sponsors > a > img {
     width: 100%;
     height: 100%;
   }
