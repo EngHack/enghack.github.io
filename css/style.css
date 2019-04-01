@@ -156,13 +156,13 @@ a:hover {
   overflow-y: auto;
 }
 
-.past-sponsors > div {
+.past-sponsors > a {
   display: flex;
   vertical-align: middle;
   justify-content: center;
 }
 
-.past-sponsors > div > img {
+.past-sponsors > a > img {
   width: 75%;
   height: 75%;
 }
