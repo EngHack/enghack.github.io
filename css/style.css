@@ -284,6 +284,10 @@ a:hover {
   animation: dash 5s infinite linear;
 }
 
+#code-of-conduct {
+  margin-bottom: 5em;
+}
+
 /* Mobile */
 
 @media only screen and (max-width: 768px) {
@@ -348,6 +352,10 @@ a:hover {
 
   .wires-tablet {
     display: inline-block;
+  }
+
+  #code-of-conduct > div {
+    text-align: left;
   }
 }
 
