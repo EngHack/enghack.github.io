@@ -135,8 +135,20 @@ a:hover {
   margin: 0 auto;
 }
 
-.gold-tier > p {
+.gold-tier > a {
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.gold-tier > a > img {
+  width: 100%;
+}
+
+.gold-desc {
   text-align: center;
+  width: 75%;
+  margin: 0 auto 5% auto;
 }
 
 .silver-tier {
@@ -148,6 +160,17 @@ a:hover {
 .bronze-tier {
   text-align: center;
   margin-bottom: 7.5%;
+}
+
+.bronze-tier > a {
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.bronze-tier > a > img {
+  width: 75%;
+  height: 75%;
 }
 
 .past-sponsors {
@@ -163,8 +186,8 @@ a:hover {
 }
 
 .past-sponsors > a > img {
-  width: 75%;
-  height: 75%;
+  width: 60%;
+  height: 60%;
 }
 
 .sponsorship-package {
