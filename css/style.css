@@ -97,6 +97,10 @@ a:hover {
   display: none;
 }
 
+#signup {
+  font-size: 18px;
+}
+
 #mlh-logo {
   position: absolute;
   top: 0;
